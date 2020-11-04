@@ -13,7 +13,11 @@
     "@angular/router": "^10.0.9",
     "rxjs": "^6.6.2",
     "tslib": "^2.0.1",
-    "zone.js": "^0.10.3"
+    "zone.js": "^0.10.3",
+    "@ngxform/common": "^0.1.2",
+    "@ngxform/ng-bootstrap-typeahead": "^0.0.4",
+    "@ngxform/platform": "^0.2.2",
+    "@ngxform/ui": "^0.1.6"
   },
   "scripts": {
     "ng": "ng",

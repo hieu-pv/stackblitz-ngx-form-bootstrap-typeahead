@@ -65,7 +65,7 @@ export class BasicComponent implements OnInit {
     this.demoForm = new NgxFormGroup({
       typeahead: new NgxBootstrapTypeaheadControl(
         "",
-        [Validators.required, Validators.email, Validators.minLength(3)],
+        [Validators.required],
         [],
         {
           label: "NgBootstrap Typeahead",
@@ -76,9 +76,7 @@ export class BasicComponent implements OnInit {
           inputFormatter: (item: any) => item.name,
           focus: true,
           errorMessages: [
-            { key: "required", message: "This field is required" },
-            { key: "email", message: "Email is invalid" },
-            { key: "minlength", message: "Min length is 3" }
+            { key: "required", message: "This field is required" }
           ]
         }
       )

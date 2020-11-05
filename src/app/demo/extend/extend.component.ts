@@ -1,7 +1,7 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { NgxFormGroup } from '@ngxform/platform';
 import { Validators } from '@angular/forms';
-import { NgxBootstrapTypeaheadExtendControl, WindowTemplateContext } from '@ngxform/ng-bootstrap-typeahead';
+import { NgxBootstrapTypeaheadControl, WindowTemplateContext } from '@ngxform/ng-bootstrap-typeahead';
 
 @Component({
   selector: 'app-extend',
@@ -26,7 +26,7 @@ export class ExtendComponent implements OnInit {
       { name: 'Florida', flag: 'f/f7/Flag_of_Florida.svg/45px-Flag_of_Florida.svg.png' }
     ];
     this.demoForm = new NgxFormGroup({
-      typeahead: new NgxBootstrapTypeaheadExtendControl('', [Validators.required, Validators.email, Validators.minLength(3)], [], {
+      typeahead: new NgxBootstrapTypeaheadControl('', [Validators.required, Validators.email, Validators.minLength(3)], [], {
         label: 'NgBootstrap Typeahead',
         controlClass: ['form-control'],
         ngClass: 'd-flex flex-column form-group',
@@ -35,9 +35,7 @@ export class ExtendComponent implements OnInit {
         inputFormatter: (item: any) => item.name,
         openOnFocus: true,
         errorMessages: [
-          { key: 'required', message: 'This field is required' },
-          { key: 'email', message: 'Email is invalid' },
-          { key: 'minlength', message: 'Min length is 3' }
+          { key: 'required', message: 'This field is required' }
         ]
       })
     });

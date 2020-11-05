@@ -80,9 +80,7 @@ export class DynamicComponent implements OnInit {
           cioc: 'VIE'
         },
         errorMessages: [
-          { key: 'required', message: 'This field is required' },
-          { key: 'email', message: 'Email is invalid' },
-          { key: 'minlength', message: 'Min length is 3' }
+          { key: 'required', message: 'This field is required' }
         ]
       })
     });

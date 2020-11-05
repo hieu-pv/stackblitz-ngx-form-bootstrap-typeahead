@@ -65,7 +65,7 @@ export class ExtendComponent implements OnInit {
     this.demoForm = new NgxFormGroup({
       typeahead: new NgxBootstrapTypeaheadControl(
         "",
-        [Validators.required, Validators.email, Validators.minLength(3)],
+        [Validators.required],
         [],
         {
           label: "NgBootstrap Typeahead",
